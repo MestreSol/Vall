@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "/venv/bin/python3",
+    'code-runner.executorMap': {
+        'python': 'venv/bin/python3'
+    },
+
+    "python.linting.mypyEnabled": false,
+    "python.linting.flake8Enabled": false,
+
+    
+}

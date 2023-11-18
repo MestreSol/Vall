@@ -46,9 +46,11 @@ CREATE TABLE Aluno_Turma(
 CREATE TABLE Aula(
     id_aula INT NOT NULL AUTO_INCREMENT,
     id_turma INT NOT NULL,
+    id_professor INT NOT NULL,
     data DATE NOT NULL,
     PRIMARY KEY(id_aula),
     FOREIGN KEY(id_turma) REFERENCES Turma(id_turma)
+    FOREIGN KEY(id_professor) REFERENCES Professor(id_professor)
 );
 
 CREATE TABLE Frequencia(

@@ -1,7 +1,7 @@
 body{
-    background: linear-gradient(to right, #113859, #5997ca), url('school-background.jpg'); /* Updated Gradient + Image */
-        background-size: cover;
-        background-repeat: no-repeat;
+    background: linear-gradient(to right, #113859, #5997ca), url('../img/school-background.jpg'); /* Updated Gradient + Image */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .inicio{

@@ -7,3 +7,8 @@ class Disciplina(db.Model):
     def __init__(self, nome):
         self.nome = nome
         
+    def to_dict(self):
+        return {
+            'id_disciplina': self.id_disciplina,
+            'nome': self.nome
+        }

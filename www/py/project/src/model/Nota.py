@@ -6,3 +6,9 @@ class Nota(db.Model):
     id_aluno = db.Column(db.Integer, db.ForeignKey('Aluno.id_aluno'), primary_key=True)
     id_turma = db.Column(db.Integer, db.ForeignKey('Turma.id_turma'), primary_key=True)
     nota = db.Column(db.Float)
+    def to_dict(self):
+        return {
+            'id_aluno': self.id_aluno,
+            'id_turma': self.id_turma,
+            'nota': self.nota
+        }

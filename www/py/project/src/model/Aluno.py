@@ -8,3 +8,10 @@ class Aluno(db.Model):
     email = db.Column(db.String(50), nullable=False, unique=True)
     senha = db.Column(db.String(50), nullable=False)
     
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'nome': self.nome,
+            'email': self.email,
+            'senha': self.senha
+        }

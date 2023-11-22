@@ -2,14 +2,18 @@ from flask import request
 from flask_restful import Resource
 from src.model.Professor import Professor
 from database import db
-
+import json
 class ProfessorController(Resource):
-    def get(self, id):
-        professor = Professor.query.get(id)
-        if professor:
-            return {'id': professor.id_professor, 'nome': professor.nome, 'email': professor.email}
-        return {'error': 'Professor not found'}, 404
-
+    def get(self, id=None):
+        if id != None:
+            professor = Professor.query.get(id)
+            if professor:
+                return professor.to_dict(), 200
+            else:
+                return {"error": "Professor not found"}, 404
+        else:
+            professores = Professor.query.all()
+            return [professor.to_dict() for professor in professores], 200
     def post(self):
         new_professor = Professor(
             nome=request.json['nome'],

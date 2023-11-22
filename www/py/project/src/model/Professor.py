@@ -10,7 +10,7 @@ class Professor(db.Model):
     
     def to_dict(self):
         return {
-            'id': self.id,
+            'id_professor': self.id_professor,
             'nome': self.nome,
             'email': self.email,
             'senha': self.senha

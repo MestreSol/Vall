@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             echo "Erro ao logar.";
         }
         else{
-            echo $result;
+            header("Location: users.php");
         }
 
         

@@ -18,7 +18,11 @@ class ProfessorController(Resource):
         new_professor = Professor(
             nome=request.json['nome'],
             email=request.json['email'],
-            senha=request.json['senha']
+            senha=request.json['senha'],
+            cpf=request.json['cpf'],
+            cep=request.json['cep'],
+            instituicao=request.json['instituicao'],
+            telefone=request.json['telefone']
         )
         db.session.add(new_professor)
         db.session.commit()
@@ -30,6 +34,11 @@ class ProfessorController(Resource):
             professor.nome = request.json.get('nome', professor.nome)
             professor.email = request.json.get('email', professor.email)
             professor.senha = request.json.get('senha', professor.senha)
+            professor.cpf = request.json.get('cpf', professor.cpf)
+            professor.cep = request.json.get('cep', professor.cep)
+            professor.instituicao = request.json.get('instituicao', professor.instituicao)
+            professor.telefone = request.json.get('telefone', professor.telefone)
+            
             db.session.commit()
             return {'message': 'Professor updated.'}
         return {'error': 'Professor not found'}, 404

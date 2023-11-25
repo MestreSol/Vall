@@ -37,7 +37,7 @@
     </p>
     <div class="botao">
     Para conferir os integrantes do projeto
-    <a href="file:///C:/Users/Showroom/Desktop/Faculdade/VALL/integrantes.html"><button>CLIQUE AQUI</button></a> 
+    <a href="file:///C:/Users/Showroom/Desktop/Faculdade/VALL/integrantes.php"><button>CLIQUE AQUI</button></a> 
     </div>
 </body>
 </html>

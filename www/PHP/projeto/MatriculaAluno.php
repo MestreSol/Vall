@@ -138,7 +138,7 @@
             <div class="btn-container">
                 <input type="button" value="CADASTRAR" onClick="alert('Cadastrado com sucesso! Aguarde a validação no e-mail para iniciar o período de teste grátis.'); return true">
             </div>
-            <p class="note">Já possui uma conta? <a href="login.html">Faça login</a></p>
+            <p class="note">Já possui uma conta? <a href="login.php">Faça login</a></p>
         </form>
     </div>
 

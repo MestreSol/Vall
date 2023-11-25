@@ -27,26 +27,26 @@
 
 <div class="botoes">
 
-        <a href= "agenda.html"> 
+        <a href= "agenda.php"> 
         <button class="agenda">AGENDA E HORÁRIOS
         <img src="../img/agenda.jpg" width="180px" height="180px"  style="border: 1px solid white;">
         </button> </a>
 
 
-        <a href="academico.html">
+        <a href="academico.php">
         <button class="academico">ACOMPANHAMENTO ACADÊMICO
         <img src="../img/acomp.jpg" width="180px" height="180px"  style="border: 1px solid white;">
         </button> </a>
   
 
-        <a href= "turma.html"> 
+        <a href= "turma.php"> 
         <button class="turmas">TURMAS 
         <img src="../img/turma.jpg" width="180px" height="180px"  style="border: 1px solid white;"> 
         </button> </a>
    
 
 
-        <a href= "planejamento.html">  
+        <a href= "planejamento.php">  
         <button class="planejamento">PLANEJAMENTO
         <img src="../img/planej.jpg"width="180px" height="180px"  style="border: 1px solid white;"> 
         </button> </a>

@@ -15,11 +15,11 @@
     <head>
     
         <div class="botoes">
-        <a href="principaisrecursos.html">
+        <a href="principaisrecursos.php">
         <button class="button">FUNCIONALIDADES</button></a>
-        <a href="login.html">
+        <a href="login.php">
         <button class="button">LOGIN</button></a>
-        <a href="time.html">
+        <a href="time.php">
         <button class="button">NOSSA EQUIPE</button></a>
         </div>
         
@@ -53,7 +53,7 @@
 
 <div class="experimente">
 <p>
-    <a href="experimente.html">
+    <a href="experimente.php">
     <button class="botaoexperimente">EXPERIMENTE GRÁTIS</button></a> <br><br>
     Faça o cadastro e aproveite o período de teste. 
 </p>    

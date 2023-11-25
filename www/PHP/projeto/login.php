@@ -24,7 +24,7 @@
             <div class="btn-container">
                 <button type="submit" onclick="logar(); return false">Entrar</button>
             </div>
-            <p class="note">Ainda não possui uma conta? <a href="experimente.html">Cadastre-se</a></p>
+            <p class="note">Ainda não possui uma conta? <a href="experimente.php">Cadastre-se</a></p>
             <div class="error-message" id="error-message"></div>
         </form>
         <div class="footer">&copy; 2023 Sua Empresa. Todos os direitos reservados.</div>
@@ -41,7 +41,7 @@
                 login === "laura" && senha === "laura" ||
                 login === "leo" && senha === "leo") {
                 alert("Login bem-sucedido! Clique em OK para entrar.");
-                location.href = "home.html";
+                location.href = "home.php";
             } else {
                 errorMessage.innerHTML = "Usuário ou senha incorretos!";
             }

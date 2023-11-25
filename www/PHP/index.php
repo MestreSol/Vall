@@ -33,11 +33,11 @@
     </p>
     <div class="botao">
     Para conferir os integrantes do projeto
-    <a href="./integrantes.html"><button>CLIQUE AQUI</button></a> 
+    <a href="./integrantes.php"><button>CLIQUE AQUI</button></a> 
     </div>
     <div class="botao">
     Para conferir o projeto
-    <a href="./projeto/index.html"><button>CLIQUE AQUI</button></a> 
+    <a href="./projeto/index.php"><button>CLIQUE AQUI</button></a> 
     </div>
 </body>
 </html>

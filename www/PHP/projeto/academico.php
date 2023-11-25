@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="inicio">
-       <b> Acompanhamento Acadêmico </b>
+        <b> Acompanhamento Acadêmico </b>
     </div>
 
     <br>

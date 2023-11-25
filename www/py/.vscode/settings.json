@@ -6,6 +6,4 @@
 
     "python.linting.mypyEnabled": false,
     "python.linting.flake8Enabled": false,
-
-    
 }

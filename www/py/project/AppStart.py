@@ -9,6 +9,7 @@ from src.controller.DisciplinaController import DisciplinaController
 from src.controller.FrequenciaController import FrequenciaController
 from src.controller.NotaController import NotaController
 from src.controller.TurmaController import TurmaController
+from src.controller.InstituicaoController import InstituicaoController
 
 from src.model.Professor import Professor
 from src.model.Aluno_turma import Aluno_turma
@@ -17,6 +18,8 @@ from src.model.Disciplina import Disciplina
 from src.model.Frequencia import Frequencia
 from src.model.Nota import Nota
 from src.model.Turma import Turma
+from src.model.Aluno import Aluno
+
 
 from database import db
 import pymysql
@@ -33,6 +36,7 @@ api.add_resource(DisciplinaController, '/disciplina', '/disciplina/<int:id>')
 api.add_resource(FrequenciaController, '/frequencia', '/frequencia/<int:id>')
 api.add_resource(NotaController, '/nota', '/nota/<int:id>')
 api.add_resource(TurmaController, '/turma', '/turma/<int:id>')
+api.add_resource(InstituicaoController, '/instituicoes', '/instituicoes/<int:id>')
 
 # %%
 # Professor Routes
@@ -154,9 +158,28 @@ def get_turma_by_nome(nome):
         return {"error": "Turma not found"}, 404
 
 
+
+@app.route('/Login/<string:username>/<string:password>')
+def MakeLogin(username=None, password=None):
+        if username and password:
+            if username == 'admin' and password == 'admin':
+                return {"message": "Login successful"}, 200
+            aluno = Aluno.query.filter_by(email=username, senha=password).first()
+            professor = Professor.query.filter_by(email=username, senha=password).first()
+            
+            if aluno:
+                return aluno.to_dict(), 200
+            elif professor:
+                return professor.to_dict(), 200
+            else :
+                return {"error": "Login failed"}, 404
+        else:
+            return {"error": "Login failed"}, 404
 # %%
 # App Start
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
+   
+  
     app.run()
